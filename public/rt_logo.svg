@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#450a0a" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#1f0303" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#050101" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Red 'R' Metallic Gradient -->
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="35%" stop-color="#dc2626"/>
+      <stop offset="70%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+
+    <!-- Silver 'T' Metallic Gradient -->
+    <linearGradient id="tGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#e2e8f0"/>
+      <stop offset="60%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Blood Drop 3D Gradient -->
+    <linearGradient id="dropGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ff3333"/>
+      <stop offset="30%" stop-color="#dc2626"/>
+      <stop offset="70%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#580808"/>
+    </linearGradient>
+
+    <!-- Blood Drop Gloss Highlight -->
+    <linearGradient id="dropHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Red Neon Glow Filter -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Dark Background -->
+  <rect width="600" height="600" rx="140" fill="url(#bgGlow)"/>
+
+  <!-- Circuit Board Tech Elements (Left) -->
+  <g stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.6" filter="url(#softGlow)">
+    <path d="M 150 200 L 190 200 L 220 230"/>
+    <path d="M 130 240 L 180 240 L 205 265"/>
+    <path d="M 140 280 L 170 280 L 190 300"/>
+    <path d="M 180 160 L 200 180 L 230 180"/>
+    <path d="M 160 320 L 190 320 L 210 340"/>
+    <!-- Circuit Nodes -->
+    <circle cx="150" cy="200" r="4" fill="#ef4444"/>
+    <circle cx="130" cy="240" r="4" fill="#ef4444"/>
+    <circle cx="140" cy="280" r="3.5" fill="#ef4444"/>
+    <circle cx="180" cy="160" r="3.5" fill="#ef4444"/>
+    <circle cx="160" cy="320" r="4" fill="#ef4444"/>
+  </g>
+
+  <!-- Molecular Structure Elements (Right) -->
+  <g stroke="#ef4444" stroke-width="3" fill="#dc2626" opacity="0.85" filter="url(#softGlow)">
+    <!-- Molecule 1 -->
+    <line x1="380" y1="160" x2="430" y2="175"/>
+    <line x1="430" y1="175" x2="455" y2="215"/>
+    <line x1="430" y1="175" x2="420" y2="130"/>
+    <circle cx="380" cy="160" r="9"/>
+    <circle cx="430" cy="175" r="10"/>
+    <circle cx="455" cy="215" r="8"/>
+    <circle cx="420" cy="130" r="9"/>
+
+    <!-- Molecule 2 -->
+    <line x1="460" y1="290" x2="480" y2="340"/>
+    <line x1="480" y1="340" x2="445" y2="380"/>
+    <line x1="445" y1="380" x2="410" y2="360"/>
+    <circle cx="460" cy="290" r="8"/>
+    <circle cx="480" cy="340" r="9"/>
+    <circle cx="445" cy="380" r="10"/>
+    <circle cx="410" cy="360" r="8"/>
+  </g>
+
+  <!-- Red Glowing Dust Particles -->
+  <g fill="#ff4d4d" opacity="0.75" filter="url(#softGlow)">
+    <circle cx="120" cy="270" r="2.5"/>
+    <circle cx="210" cy="140" r="2"/>
+    <circle cx="330" cy="130" r="2.5"/>
+    <circle cx="470" cy="240" r="2"/>
+    <circle cx="390" cy="390" r="3"/>
+    <circle cx="160" cy="380" r="2.5"/>
+  </g>
+
+  <!-- MAIN 'RT' LOGOMARK -->
+  <g id="rt-letters">
+    <!-- Letter 'R' (Red Metallic) -->
+    <path d="M 175 210 L 265 210 Q 295 210 295 255 Q 295 285 270 295 L 295 350 L 255 350 L 235 305 L 205 305 L 205 350 L 175 350 Z M 205 240 L 205 275 L 255 275 Q 268 275 268 257 Q 268 240 255 240 Z"
+          fill="url(#rGrad)"
+          stroke="#ff4d4d"
+          stroke-width="3"
+          stroke-linejoin="round"
+          filter="url(#softGlow)"/>
+
+    <!-- Letter 'T' (Silver Chrome Metallic) -->
+    <path d="M 330 210 L 450 210 L 440 240 L 405 240 L 390 350 L 360 350 L 375 240 L 330 240 Z"
+          fill="url(#tGrad)"
+          stroke="#ffffff"
+          stroke-width="2.5"
+          stroke-linejoin="round"
+          filter="url(#softGlow)"/>
+
+    <!-- Inner Shadow & Highlight Accents on R and T -->
+    <path d="M 175 210 L 265 210 Q 295 210 295 255" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.6"/>
+    <path d="M 330 210 L 450 210" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.9"/>
+  </g>
+
+  <!-- 3D Glossy Blood Droplet (Center, Overlapping R and T) -->
+  <g id="blood-drop" filter="url(#neonGlow)">
+    <!-- Droplet Base -->
+    <path d="M 305 185 C 315 220 355 275 355 315 C 355 355 328 375 305 375 C 282 375 255 355 255 315 C 255 275 295 220 305 185 Z"
+          fill="url(#dropGrad)"
+          stroke="#ff4d4d"
+          stroke-width="2.5"/>
+
+    <!-- Droplet Specular 3D Highlight Curve -->
+    <path d="M 285 245 C 275 275 272 315 285 345 C 282 335 280 300 292 260 C 295 250 290 245 285 245 Z"
+          fill="url(#dropHighlight)"/>
+    
+    <!-- Top Sparkle Dot on Droplet -->
+    <ellipse cx="292" cy="255" rx="8" ry="14" transform="rotate(-25 292 255)" fill="#ffffff" opacity="0.85"/>
+  </g>
+
+  <!-- 'LABS' Typography in Modern Sans -->
+  <text x="300" y="430" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" 
+        font-size="44" 
+        font-weight="900" 
+        letter-spacing="14" 
+        fill="#ffffff"
+        filter="url(#softGlow)">
+    LABS
+  </text>
+
+  <!-- ECG Heartbeat Line Below LABS -->
+  <g stroke="#ff3333" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)">
+    <path d="M 200 465 L 245 465 L 255 455 L 265 475 L 275 440 L 285 490 L 295 455 L 305 470 L 315 465 L 400 465"/>
+  </g>
+</svg>

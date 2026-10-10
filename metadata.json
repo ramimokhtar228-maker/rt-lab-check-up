@@ -1,0 +1,6 @@
+{
+  "name": "معامل RT للتحاليل الطبية | RT Lab Check-Up",
+  "description": "منظومة معامل RT للتحاليل الطبية والفحص الشامل، بوابة حجز المرضى والزيارات المنزلية، كتالوج التحاليل والباقات، عجلة الحظ والمكافآت، والمزامنة الفورية مع نظام RT الموحد.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
